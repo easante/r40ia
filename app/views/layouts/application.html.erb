@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>
-    <%# if content_for?(:title) %>
-      <%#= yield(:title) %>
-    <%# else %>
+    <% if content_for?(:title) %>
+      <%= yield(:title) %>
+    <% else %>
       Ticketee
-    <%# end %>
+    <% end %>
   </title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
