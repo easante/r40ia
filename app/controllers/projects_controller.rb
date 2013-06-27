@@ -42,14 +42,15 @@ class ProjectsController < ApplicationController
       render action: "edit"
     end
   end
-#
-#  def destroy
-#    @project.destroy
-#
-#    flash[:notice] = "Project has been destroyed."
-#    redirect_to projects_path
-#  end
-#
+
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+
+    flash[:notice] = "Project has been destroyed."
+    redirect_to projects_path
+  end
+
   private
 
     def project_params
