@@ -25,10 +25,10 @@ feature 'Creating Projects' do
     expect(find("title").native.text).to have_content(title)
   end
 
-#  scenario "can not create a project without a name" do
-#    click_button 'Create Project'
-#
-#    expect(page).to have_content('Project has not been created.')
-#    expect(page).to have_content("Name can't be blank")
-#  end
+  scenario "can not create a project without a name" do
+    click_button 'Create Project'
+
+    expect(page).to have_content('Project has not been created.')
+    expect(page).to have_content("Name can't be blank")
+  end
 end
