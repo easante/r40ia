@@ -12,9 +12,9 @@ gem 'cancan', '1.6.9'
 gem 'carrierwave', '0.8.0'
 
 group :assets do
-  gem 'sprockets-rails', '~> 2.0.0.rc4'
+  #gem 'sprockets-rails', '~> 2.0.0.rc4'
   # Use SCSS for stylesheets
-  gem 'sass-rails', '~> 4.0.0.rc1'
+  gem 'sass-rails', '~> 4.0.0'
   
   # Use CoffeeScript for .js.coffee assets and views
   gem 'coffee-rails', '~> 4.0.0'
@@ -55,6 +55,8 @@ end
 
 # Use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.0.0'
+
+ gem 'database_cleaner', '1.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
